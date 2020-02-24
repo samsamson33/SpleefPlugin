@@ -1,0 +1,20 @@
+main: io.github.samsamson33.spleef.SpleefPlugin
+author: Samsamson33#0913
+name: Spleef
+version: 0.0.1-dev
+api-version: "1.13"
+permissions:
+  spleef.join:
+    description: "Allows you to play in spleef games"
+    default: true
+  spleef.manage:
+    description: "Allows you to manage spleef games"
+    default: op
+  spleef.reload:
+    description: "Allows you to use /spleef reload"
+    default: op
+
+commands:
+  spleef:
+    usage: /spleef
+    description: "Join, leave, or manage spleef games"
