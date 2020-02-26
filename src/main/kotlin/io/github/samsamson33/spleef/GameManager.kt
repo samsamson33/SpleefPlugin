@@ -113,7 +113,7 @@ class GameManager(val plugin: SpleefPlugin) {
 
 		gameActive = true
 
-		Countdown(plugin, 10).then {
+		Countdown(plugin, 10).start().thenRun {
 			fill(
 					Material.STONE_PRESSURE_PLATE, world,
 					x - size, y + 1, z - size,
